@@ -644,6 +644,7 @@ img {
 
 .backdrop.is-hidden .modal {
   opacity: 0;
+  scale: 1.5;
 }
 
 .modal {
@@ -660,7 +661,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: opacity var(--time), visibility var(--time);
+  transition: opacity var(--time), scale var(--time);
 }
 
 .modal-btn {
