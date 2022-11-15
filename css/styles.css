@@ -682,7 +682,19 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+
+  transition: color var(--time);
 }
+
+.modal-icon{
+  fill: currentColor;
+}
+.modal-btn:hover,
+.modal-btn:focus{
+  color: var(--accent-color);
+ 
+}
+
 
 /* ===========>>>  Анимации и Переходы <<<<=========== */
 
