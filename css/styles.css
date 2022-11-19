@@ -500,34 +500,57 @@ img {
 .footer-socials-icon {
   fill: currentColor;
 }
-/* Подришись на рассылку*/
+/* ===========>>>> Подришись на рассылку <<<<===========*/
+.footer-mailing {
+  margin-left: auto;
+}
 
-.footer-btn-send {
-  width: 200px;
+.footer-mailing-groop {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-mailing-email {
+  display: block;
+  /* padding-left: 16px; */
+
+  width: 358px;
   height: 50px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
+
+  color: var(--main-white-color);
+  background-color: var(--dark-background-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-mailing-email::placeholder {
+  padding-left: 16px;
+}
+
+.footer-mailing-email:focus {
+  border: 1px solid var(--accent-color);
+}
+.footer-btn-send {
+  display: flex;
   align-items: center;
   text-align: center;
+  gap: 10px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
 
   color: var(--icon-white-color);
-  background-color: var(--accent-color);
+
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.footer-email-groop {
-  display: flex;
-  text-align: center;
-  gap: 12px;
-}
-
-/* ===========>>>>  Портфолио CSS<<<<=========== */
+/* ===========>>>>  Портфолио CSS <<<<=========== */
 
 /* ===========>>>>  Фильтр  <<<<=========== */
 
@@ -722,6 +745,7 @@ img {
   color: var(--accent-color);
 }
 /*  ===========>>> Форма <<<<=========== */
+
 /*  ===========>>> Инпуты <<<<=========== */
 .modal-title {
   margin-bottom: 12px;
@@ -832,7 +856,7 @@ img {
 
 /*  ===========>>> Чекбоскс <<<<=========== */
 .modal-form-agree,
-.modal-form-solution{
+.modal-form-solution {
   cursor: pointer;
 }
 
@@ -854,7 +878,6 @@ img {
 
   transition: var(--time);
   cursor: pointer;
-  
 }
 
 .modal-form-checkbox:checked {
@@ -871,7 +894,6 @@ img {
   text-align: center;
 
   padding: 10px 52px;
-  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
