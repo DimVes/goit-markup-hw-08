@@ -546,6 +546,7 @@ img {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
+ 
 
   color: var(--icon-white-color);
 
@@ -873,7 +874,6 @@ img {
 .modal-form-checkbox {
   appearance: none;
 
-
   width: 16px;
   height: 15px;
 
@@ -905,10 +905,8 @@ img {
   align-items: center;
   text-align: center;
 
-
   margin: 0 auto;
   padding: 10px 52px;
-
 
   font-weight: 700;
   font-size: 16px;
