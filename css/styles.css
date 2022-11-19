@@ -523,14 +523,18 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline-offset: -1px;
+
+  transition: outline var(--time);
 }
 .footer-mailing-email::placeholder {
   padding-left: 16px;
 }
 
 .footer-mailing-email:focus {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
+
 .footer-btn-send {
   display: flex;
   align-items: center;
@@ -548,6 +552,11 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition: background-color var(--time);
+}
+.footer-btn-send:focus {
+  background-color: var(--btn-active-color);
 }
 
 /* ===========>>>>  Портфолио CSS <<<<=========== */
@@ -804,6 +813,7 @@ img {
 .modal-form-field:focus + .modal-form-icon {
   fill: var(--accent-color);
 }
+
 /*  ===========>>> Комментарий <<<<=========== */
 .modal-form-message {
   display: block;
@@ -893,7 +903,11 @@ img {
   align-items: center;
   text-align: center;
 
+
+  margin: 0 auto;
   padding: 10px 52px;
+
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -903,9 +917,6 @@ img {
   background-color: var(--btn-active-color);
 
   border-radius: 4px;
-  border: 0;
-
-  cursor: pointer;
 
   transition: box-shadow var(--time);
 }
