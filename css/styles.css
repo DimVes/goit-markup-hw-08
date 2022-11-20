@@ -512,7 +512,7 @@ img {
 
 .footer-mailing-email {
   display: block;
-  /* padding-left: 16px; */
+  padding-left: 16px;
 
   width: 358px;
   height: 50px;
@@ -526,9 +526,6 @@ img {
   outline-offset: -1px;
 
   transition: outline var(--time);
-}
-.footer-mailing-email::placeholder {
-  padding-left: 16px;
 }
 
 .footer-mailing-email:focus {
