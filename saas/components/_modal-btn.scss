@@ -1,0 +1,26 @@
+/*  ===========>>> Модальное окно - Конпка <<<<=========== */
+.agreement__btn {
+    display: block;
+    align-items: center;
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 10px 52px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--icon-white-color);
+    background-color: var(--btn-active-color);
+
+    border-radius: 4px;
+
+    transition: box-shadow var(--time);
+}
+
+.agreement__btn:hover,
+.agreement__btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

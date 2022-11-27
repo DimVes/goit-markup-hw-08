@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="uk">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title lang="en">Web Studio (Version 2.1)</title>
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <!--Modern normalize-->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <!--Custom styles-->
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Web Studio (Version 2.1)</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Modern normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!--Custom styles-->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" lang="en" class="logo logo__header link"
-          ><span class="logo__accent">Web</span>Studio</a
-        >
+        <a class="logo header__logo link" href="./index.html" lang="en">
+          <span class="logo__accent">Web</span>Studio
+        </a>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -43,10 +45,10 @@
           </ul>
         </nav>
         <ul class="header__contact-list list">
-          <li class="header__contact-item">
+          <li>
             <a
-              href="mailto:info@devstudio.com"
               class="header__contact-link link"
+              href="mailto:info@devstudio.com"
               lang="en"
             >
               <svg class="header__contact-icon" width="16" height="12">
@@ -55,8 +57,8 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__contact-item">
-            <a href="tel:+380961111111" class="header__contact-link link">
+          <li>
+            <a class="header__contact-link link" href="tel:+380961111111">
               <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -68,37 +70,29 @@
     </header>
     <main>
       <section class="section">
-        <!-- Список кнопок -->
         <div class="container">
           <h1 class="visually-hidden">Наші проєкти</h1>
-          <ul class="filter-list list">
-            <li class="filter-list__item">
-              <button type="button" class="filter-list__btn btn">Усі</button>
+          <ul class="filter list">
+            <li>
+              <button class="filter__btn" type="button">Усі</button>
             </li>
-            <li class="filter-list__item">
-              <button type="button" class="filter-list__btn btn">
-                Веб-сайти
-              </button>
+            <li>
+              <button class="filter__btn" type="button">Веб-сайти</button>
             </li>
-            <li class="filter-list__item">
-              <button type="button" class="filter-list__btn btn">
-                Додатки
-              </button>
+            <li>
+              <button class="filter__btn" type="button">Додатки</button>
             </li>
-            <li class="filter-list__item">
-              <button type="button" class="filter-list__btn btn">Дизайн</button>
+            <li>
+              <button class="filter__btn" type="button">Дизайн</button>
             </li>
-            <li class="filter-list__item">
-              <button type="button" class="filter-list__btn btn">
-                Маркетинг
-              </button>
+            <li>
+              <button class="filter__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <!-- Потфолио список -->
           <ul class="portfolio card-set list">
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/laptop.jpg"
                     alt="Ноутбук з веб-сайтом"
@@ -114,16 +108,15 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">Технокряк</h2>
-                  <p class="project-wrapper__text">Веб-сайт</p>
+                <div class="card__wrapper">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/poster.jpg"
                     alt="Постер з баскетболістами"
@@ -139,18 +132,17 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">
+                <div class="card__wrapper">
+                  <h2 class="card__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="project-wrapper__text">Дизайн</p>
+                  <p class="card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/seafood.jpg"
                     alt="Логотип рибного ресторану"
@@ -166,18 +158,17 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">
+                <div class="card__wrapper">
+                  <h2 class="card__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="project-wrapper__text">Додаток</p>
+                  <p class="card__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/headphones.jpg"
                     alt="Навушники"
@@ -193,18 +184,17 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">
+                <div class="card__wrapper">
+                  <h2 class="card__title">
                     Проєкт <span lang="en">Prime</span>
                   </h2>
-                  <p class="project-wrapper__text">Маркетинг</p>
+                  <p class="card__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/boxes.jpg"
                     alt="Дві коробки"
@@ -220,18 +210,17 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">
+                <div class="card__wrapper">
+                  <h2 class="card__title">
                     Проєкт <span lang="en">Boxes</span>
                   </h2>
-                  <p class="project-wrapper__text">Додаток</p>
+                  <p class="card__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/monitor.jpg"
                     alt="Монітор з веб-сайтом"
@@ -247,18 +236,17 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 lang="en" class="project-wrapper__title">
+                <div class="card__wrapper">
+                  <h2 lang="en" class="card__title">
                     Inspiration has no Borders
                   </h2>
-                  <p class="project-wrapper__text">Веб-сайт</p>
+                  <p class="card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/magazine.jpg"
                     alt="Журнал"
@@ -274,18 +262,17 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">
+                <div class="card__wrapper">
+                  <h2 class="card__title">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="project-wrapper__text">Дизайн</p>
+                  <p class="card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/lab-tag.jpg"
                     alt="Цінник з надписом TAG"
@@ -301,18 +288,15 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 class="project-wrapper__title">
-                    Проєкт <span lang="en">LAB</span>
-                  </h2>
-                  <p class="project-wrapper__text">Маркетинг</p>
+                <div class="card__wrapper">
+                  <h2 class="card__title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="card__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card card-set__item">
-              <a href="" class="portfolio-card__link link">
-                <div class="porifolio-card__thumb">
+            <li class="portfolio__card card-set__item">
+              <a href="" class="link">
+                <div class="card__thumb">
                   <img
                     src="./images/portfolio/laptop-hands.jpg"
                     alt="Ноутбук з руками людини"
@@ -328,12 +312,9 @@
                     </p>
                   </div>
                 </div>
-
-                <div class="project-wrapper">
-                  <h2 lang="en" class="project-wrapper__title">
-                    Growing Business
-                  </h2>
-                  <p class="project-wrapper__text">Додаток</p>
+                <div class="card__wrapper">
+                  <h2 lang="en" class="card__title">Growing Business</h2>
+                  <p class="card__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -341,36 +322,35 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__contacts">
-          <a href="./index.html" lang="en" class="logo footer__logo link"
-            ><span class="logo__accent">Web</span>Studio</a
+          <a class="logo footer__logo link" href="./index.html" lang="en">
+            <span class="logo__accent">Web</span>Studio</a
           >
           <address>
             <ul class="footer__contacts-list list">
               <li class="footer__contacts-item">
                 <a
+                  class="footer__contacts-link link"
                   href="https://goo.gl/maps/BQu9GLipV9uaVXhj8"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="footer__contacts-link link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="footer__contacts-item">
                 <a
+                  class="footer__contacts-link footer__contacts-link--alpha link"
                   href="mailto:info@devstudio.com"
-                  class="footer__contacts-link footer__contacts-link--white link"
                   lang="en"
                   >info@devstudio.com
                 </a>
               </li>
               <li class="footer__contacts-item">
                 <a
+                  class="footer__contacts-link footer__contacts-link--alpha link"
                   href="tel:+380961111111"
-                  class="footer__contacts-link footer__contacts-link--white link"
                   >+38 096 111 11 11
                 </a>
               </li>
@@ -434,32 +414,24 @@
             </li>
           </ul>
         </div>
-        <div class="footer-mailing">
-          <p class="footer__title">Підпишіться на розсилку</p>
-          <form class="footer-mailing-form" name="footer_email">
-            <div class="footer-mailing-groop">
-              <input
-                class="footer-mailing-groop__input"
-                type="email"
-                name="footer-email"
-                id="footer-email"
-                placeholder="E-mail"
-                required
-              />
-
-              <button class="footer-mailing-groop-btn btn" type="submit">
-                Підписатися
-                <svg
-                  class="footer-mailing-form-btn__icon"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
+        <form class="subscription-form">
+          <label class="subscription-form__label">
+            <strong class="footer__title">Підпишіться на розсилку</strong>
+            <input
+              class="subscription-form__input"
+              type="email"
+              placeholder="E-mail"
+              name="user-email"
+              required
+            />
+          </label>
+          <button class="subscription-form__btn btn" type="submit">
+            Підписатися
+            <svg class="btn__icon-send" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>

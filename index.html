@@ -18,16 +18,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!--Custom styles-->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" lang="en" class="logo logo__header link"
-          ><span class="logo__accent">Web</span>Studio</a
-        >
+        <a class="logo header__logo link" href="./index.html" lang="en">
+          <span class="logo__accent">Web</span>Studio
+        </a>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -44,10 +43,10 @@
           </ul>
         </nav>
         <ul class="header__contact-list list">
-          <li class="header__contact-item">
+          <li>
             <a
-              href="mailto:info@devstudio.com"
               class="header__contact-link link"
+              href="mailto:info@devstudio.com"
               lang="en"
             >
               <svg class="header__contact-icon" width="16" height="12">
@@ -56,8 +55,8 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__contact-item">
-            <a href="tel:+380961111111" class="header__contact-link link">
+          <li>
+            <a class="header__contact-link link" href="tel:+380961111111">
               <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -68,7 +67,6 @@
       </div>
     </header>
     <main>
-      <!-- Hero -->
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-section__title">
@@ -79,7 +77,6 @@
           </button>
         </div>
       </section>
-      <!-- Преимущества -->
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
@@ -134,7 +131,6 @@
           </ul>
         </div>
       </section>
-      <!-- Чем мы занимемся -->
       <section class="work__section section">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
@@ -175,12 +171,11 @@
           </ul>
         </div>
       </section>
-      <!-- Команда -->
       <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list card-set list">
-            <li class="team__card card-set-item">
+            <li class="team__card card-set__item">
               <img
                 src="./images/team1.jpg"
                 alt="Член команди"
@@ -189,7 +184,7 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
-                <p lang="en" class="team__postion">Product Designer</p>
+                <p class="team__postion" lang="en">Product Designer</p>
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -246,7 +241,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card card-set-item">
+            <li class="team__card card-set__item">
               <img
                 src="./images/team2.jpg"
                 alt="Член команди"
@@ -255,7 +250,7 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
-                <p lang="en" class="team__postion">Frontend Developer</p>
+                <p class="team__postion" lang="en">Frontend Developer</p>
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -312,7 +307,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card card-set-item">
+            <li class="team__card card-set__item">
               <img
                 src="./images/team3.jpg"
                 alt="Член команди"
@@ -321,7 +316,7 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
-                <p lang="en" class="team__postion">Marketing</p>
+                <p class="team__postion" lang="en">Marketing</p>
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -378,7 +373,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__card card-set-item">
+            <li class="team__card card-set__item">
               <img
                 src="./images/team4.jpg"
                 alt="Член команди"
@@ -387,7 +382,7 @@
               />
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
-                <p lang="en" class="team__postion">UI Designer</p>
+                <p class="team__postion" lang="en">UI Designer</p>
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -447,7 +442,6 @@
           </ul>
         </div>
       </section>
-      <!-- Постоянные клиенты -->
       <section class="client section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
@@ -528,36 +522,35 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__contacts">
-          <a href="./index.html" lang="en" class="logo footer__logo link"
-            ><span class="logo__accent">Web</span>Studio</a
+          <a class="logo footer__logo link" href="./index.html" lang="en">
+            <span class="logo__accent">Web</span>Studio</a
           >
           <address>
             <ul class="footer__contacts-list list">
               <li class="footer__contacts-item">
                 <a
+                  class="footer__contacts-link link"
                   href="https://goo.gl/maps/BQu9GLipV9uaVXhj8"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="footer__contacts-link link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="footer__contacts-item">
                 <a
+                  class="footer__contacts-link footer__contacts-link--alpha link"
                   href="mailto:info@devstudio.com"
-                  class="footer__contacts-link footer__contacts-link--white link"
                   lang="en"
                   >info@devstudio.com
                 </a>
               </li>
               <li class="footer__contacts-item">
                 <a
+                  class="footer__contacts-link footer__contacts-link--alpha link"
                   href="tel:+380961111111"
-                  class="footer__contacts-link footer__contacts-link--white link"
                   >+38 096 111 11 11
                 </a>
               </li>
@@ -621,112 +614,113 @@
             </li>
           </ul>
         </div>
-        <div class="footer-mailing">
-          <p class="footer__title">Підпишіться на розсилку</p>
-          <form class="footer-mailing-form" name="footer_email">
-            <div class="footer-mailing-groop">
-              <input
-                class="footer-mailing-groop__input"
-                type="email"
-                name="footer-email"
-                id="footer-email"
-                placeholder="E-mail"
-                required
-              />
-
-              <button class="footer-mailing-groop-btn btn" type="submit">
-                Підписатися
-                <svg
-                  class="footer-mailing-form-btn__icon"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
+        <form class="subscription-form">
+          <label class="subscription-form__label">
+            <strong class="footer__title">Підпишіться на розсилку</strong>
+            <input
+              class="subscription-form__input"
+              type="email"
+              placeholder="E-mail"
+              name="user-email"
+              required
+            />
+          </label>
+          <button class="subscription-form__btn btn" type="submit">
+            Підписатися
+            <svg class="btn__icon-send" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
-
-    <!-- Модалка -->
-
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-btn__icon" width="18" height="18">
-            <use href="./images/icons.svg#close-icon"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-from" name="modal_from">
-          <div class="modal-form-group" role="group">
-            <label class="modal-form__label" for="user_name">Ім'я</label>
-            <div class="modal-form__cover">
+        <form class="order-form">
+          <strong class="order-form__title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <div class="order-form__group" role="group">
+            <label class="order-form__label" for="user-name">Ім'я</label>
+            <div class="order-form__input-wrapper">
               <input
-                class="modal-form__input"
+                class="order-form__input"
                 type="text"
-                name="user_name"
-                id="user_name"
+                id="user-name"
+                name="user-name"
                 required
               />
               <svg class="input__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-            <label class="modal-form__label" for="user_phone">Телефон</label>
-            <div class="modal-form__cover">
+            <label class="order-form__label" for="user-phone">Телефон</label>
+            <div class="order-form__input-wrapper">
               <input
-                class="modal-form__input"
+                class="order-form__input"
                 type="tel"
-                name="user_phone"
-                id="user_phone"
+                id="user-phone"
+                name="user-phone"
                 required
               />
               <svg class="input__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-            <label class="modal-form__label" for="user_mail">Пошта</label>
-            <div class="modal-form__cover">
+            <label class="order-form__label" for="user-mail">Пошта</label>
+            <div class="order-form__input-wrapper">
               <input
-                class="modal-form__input"
-                type="text"
-                name="user_mail"
-                id="user_mail"
+                class="order-form__input"
+                type="email"
+                id="user-mail"
+                name="user-mail"
                 required
               />
               <svg class="input__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-            <label class="modal-form__label" for="user_message">Коментар</label>
+            <label class="order-form__label" for="user-message">Коментар</label>
             <textarea
-              class="modal-form__comments"
-              name="user_message"
-              id="user_message"
-              rows="6"
+              class="order-form__text"
+              name="user-message"
+              id="user-message"
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="agreement" role="group">
+
+          <label class="checkbox__label" for="form-checkbox">
             <input
-              class="agreement__checkbox"
+              class="checkbox__input visually-hidden"
               type="checkbox"
-              id="user_agreement"
+              id="form-checkbox"
+              name="form-checkbox"
+              required
             />
-            <label class="agreement__label" for="user_agreement"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="agreement__link" href="">Умови договору</a></label
+            <svg class="checkbox__icon" width="16" height="15">
+              <use
+                class="checkbox__icon--uncheck"
+                href="./images/icons.svg#icon-uncheck"
+              ></use>
+              <use
+                class="checkbox__icon--check"
+                href="./images/icons.svg#icon-check"
+              ></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="checkbox__terms-link" href="./index.html"
+              >Умови договору</a
             >
-          </div>
-          <button class="agreement__btn btn" type="submit">Відправити</button>
+          </label>
+          <button class="order-form__btn btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
-
-    <!-- Скрипт JS -->
-    <script src="./JS/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
