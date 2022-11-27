@@ -708,13 +708,13 @@ img {
   transition: opacity var(--time), visibility var(--time);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
+.backdrop--is-hidden {
   visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
   opacity: 0;
   scale: 1.5;
 }
@@ -737,7 +737,7 @@ img {
   transition: opacity var(--time), scale var(--time);
 }
 
-.modal-btn {
+.close-btn {
   position: absolute;
   top: 11px;
   right: 10px;
@@ -759,17 +759,17 @@ img {
   transition: color var(--time);
 }
 /*===========>>>   Ховер- Фокус кнопки  <<<<=========== */
-.modal-icon {
+.close-btn__icon {
   fill: currentColor;
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.close-btn__icon:hover,
+.close-btn__icon:focus {
   color: var(--accent-color);
 }
 /*  ===========>>> Форма <<<<=========== */
 
 /*  ===========>>> Инпуты <<<<=========== */
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -781,7 +781,7 @@ img {
   color: var(--main-title-color);
 }
 
-.modal-form-label {
+.modal-form__label {
   display: block;
   margin-bottom: 4px;
 
@@ -793,12 +793,12 @@ img {
   color: var(--main-text-color);
 }
 
-.modal-form-cover {
+.modal-form__cover {
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal-form-field {
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -812,23 +812,23 @@ img {
   cursor: pointer;
 }
 
-.modal-form-field:focus {
+.modal-form__input:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.modal-form-icon {
+.input__icon {
   position: absolute;
   top: 50%;
   left: 12px;
 
   transform: translateY(-50%);
 }
-.modal-form-field:focus + .modal-form-icon {
+.modal-form__input:focus + .input__icon{
   fill: var(--accent-color);
 }
 
 /*  ===========>>> Комментарий <<<<=========== */
-.modal-form-message {
+.modal-form__comments {
   display: block;
   width: 100%;
   height: 120px;
@@ -844,10 +844,10 @@ img {
   outline-offset: -1px;
   transition: outline var(--time);
 }
-.modal-form-message:focus {
+.modal-form__comments:focus {
   outline: 1px solid var(--accent-color);
 }
-.modal-form-message::placeholder {
+.modal-form__comments::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -857,33 +857,33 @@ img {
 }
 
 /*  ===========>>> Соглашение <<<<=========== */
-.modal-form-agree {
+.agreement {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9px;
   margin-bottom: 30px;
 }
-.modal-form-solution {
+.agreement__label {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   font-weight: 400;
   user-select: none;
 }
 
-.modal-from-solution-link {
+.agreement__link{
   color: var(--accent-color);
   /* text-underline-position: under; */
   text-underline-offset: 2px;
 }
 
 /*  ===========>>> Чекбоскс <<<<=========== */
-.modal-form-agree,
-.modal-form-solution {
+.agreement__label,
+.agreement__link {
   cursor: pointer;
 }
 
-.modal-form-checkbox {
+.agreement__checkbox {
   appearance: none;
 
   width: 16px;
@@ -904,7 +904,7 @@ img {
   cursor: pointer;
 }
 
-.modal-form-checkbox:checked {
+.agreement__checkbox:checked {
   outline-color: var(--accent-color);
   background-color: var(--accent-color);
   background-size: 11px 8px;
@@ -912,7 +912,7 @@ img {
 }
 
 /*  ===========>>> Модальное окно - Конпка <<<<=========== */
-.modal-form-btn {
+.agreement__btn {
   display: block;
   align-items: center;
   text-align: center;
@@ -933,31 +933,8 @@ img {
   transition: box-shadow var(--time);
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.agreement__btn:hover,
+.agreement__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* ===========>>>  Анимации и Переходы <<<<=========== */
-
-/*===========>>> Подчеркивание на странице  <<<<=========== */
-
-.nav-item {
-  position: relative;
-}
-.current::after {
-  content: "";
-
-  position: absolute;
-  bottom: 0;
-  transform: translateY(1px);
-  scale: 1.09;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  padding: 0;
-
-  background: var(--accent-color);
-  border-radius: 2px;
-}
