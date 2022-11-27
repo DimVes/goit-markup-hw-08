@@ -59,6 +59,13 @@ body {
   gap: var(--indent);
 }
 
+.card-set__item {
+  position: relative;
+  flex-basis: calc(
+    (100% - var(--indent) * (var(--items) - 1)) / (var(--items))
+  );
+}
+
 /* ===========>>>  Сброс   <<<===========*/
 
 h1,
@@ -145,11 +152,11 @@ img {
 
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .nav__link--current {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 .nav__link--current::after {
   position: absolute;
@@ -157,7 +164,7 @@ img {
   bottom: -1px;
   transform: translateX(-50%);
 
-  content: '';
+  content: "";
   display: block;
 
   width: 108%;
@@ -211,7 +218,7 @@ img {
   text-align: center;
 }
 
-.hero-title {
+.hero-section__title {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -226,7 +233,7 @@ img {
   color: var(--main-white-color);
 }
 
-.hero-btn {
+.hero-section__btn {
   padding: 10px 32px;
   min-width: 216px;
 
@@ -243,9 +250,9 @@ img {
   transition: background-color var(--time);
 }
 
-.hero-btn:active,
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-section__btn:active,
+.hero-section__btn:hover,
+.hero-section__btn:focus {
   background-color: var(--btn-active-color);
 }
 /* ===========>>>>Преимущества <<<<=========== */
@@ -255,7 +262,7 @@ img {
   padding-bottom: 94px;
 }
 
-.features-card {
+.features__card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,7 +273,7 @@ img {
   margin-bottom: 30px;
 }
 
-.features-item {
+.features__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -276,7 +283,7 @@ img {
   color: var(--main-title-color);
 }
 
-.features-text {
+.features__text {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
@@ -303,12 +310,6 @@ img {
 }
 
 /* ===========>>>> Чем мы занимаемся <<<<=========== */
-.card-set-item {
-  position: relative;
-  flex-basis: calc(
-    (100% - var(--indent) * (var(--items) - 1)) / (var(--items))
-  );
-}
 
 .card-overlay {
   position: absolute;
@@ -562,7 +563,6 @@ img {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
- 
 
   color: var(--icon-white-color);
 
