@@ -187,12 +187,11 @@ img {
 }
 
 .header__contact-link:hover,
-.cheader__contact-link:focus {
+.header__contact-link:focus {
   color: var(--accent-color);
 }
 
-.mail-icon,
-.phone-icon {
+.header__contact-icon {
   margin-right: 10px;
   fill: currentColor;
 }
