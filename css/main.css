@@ -1262,15 +1262,19 @@ button {
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform var(--anmtn-duration-cubic);
-  transition: -webkit-transform var(--anmtn-duration-cubic);
-  transition: transform var(--anmtn-duration-cubic);
-  transition: transform var(--anmtn-duration-cubic), -webkit-transform var(--anmtn-duration-cubic);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity var(--anmtn-duration-cubic), visibility var(--anmtn-duration-cubic);
+  transition: opacity var(--anmtn-duration-cubic), visibility var(--anmtn-duration-cubic);
 }
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
 .menu-container .menu-toggle {

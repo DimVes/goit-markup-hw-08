@@ -33,12 +33,23 @@
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform var(--anmtn-duration-cubic);
+ 
+
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity var(--anmtn-duration-cubic), visibility var(--anmtn-duration-cubic);
   // overflow: scroll;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
 .menu-container .menu-toggle {
