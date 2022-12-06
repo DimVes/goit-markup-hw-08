@@ -7,10 +7,6 @@
   background-color: var(--hero-backrgound-color);
 
   text-align: center;
-  @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
 
   //*   mobile
   @media screen and (max-width: 767px) {
@@ -71,6 +67,10 @@
         url(../images/Hero/bg_lg@2x.jpg);
     }
   }
+}
+@media screen and (min-width: 1200px) {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-section__title {
