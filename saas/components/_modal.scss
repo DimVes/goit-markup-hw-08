@@ -20,6 +20,9 @@
     transform: translateX(-50%) translateY(-50%) scale(1.2);
     opacity: 0;
   }
+  @media screen and (max-width: 449.98px) {
+    width: 100vw;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
