@@ -1,6 +1,9 @@
 .header {
     background-color: var(--main-background-color);
     border-bottom: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: relative;
 }
 
 .header__container {
@@ -13,9 +16,10 @@
 }
 
 .header__contact-list {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // gap: 50px;
+    // margin-left: auto;
 }
 
 .header__contact-link {

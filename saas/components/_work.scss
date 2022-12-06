@@ -1,9 +1,14 @@
 .work__section {
     padding-top: 0;
+    @media screen and (max-width:1199px) {
+        display: none;
+        
+    }
 }
 
 .work__list {
     --items: 3;
+    gap: 30px;
 }
 
 .work__item {
