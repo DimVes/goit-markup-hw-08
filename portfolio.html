@@ -31,10 +31,14 @@
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
-              <a class="nav__link link " href="./index.html">Студія</a>
+              <a class="nav__link link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
+              <a
+                class="nav__link nav__link--current link"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link link" href="">Контакти</a>
@@ -43,7 +47,11 @@
         </nav>
         <ul class="header__contact-list list">
           <li>
-            <a class="header__contact-link link" href="mailto:info@devstudio.com" lang="en">
+            <a
+              class="header__contact-link link"
+              href="mailto:info@devstudio.com"
+              lang="en"
+            >
               <svg class="header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -59,9 +67,16 @@
             </a>
           </li>
         </ul>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_40px" aria-label="Перемикач мобільного меню"></use>
+            <use
+              href="./images/icons.svg#icon-menu_40px"
+              aria-label="Перемикач мобільного меню"
+            ></use>
           </svg>
         </button>
       </div>
@@ -95,9 +110,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/laptop.jpg"
-                    alt="Ноутбук з веб-сайтом"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_1_sm@1x.jpg 450w,
+                      ./images/portfolio/project_1_sm@2x.jpg 900w,
+                      ./images/portfolio/project_1_md@1x.jpg 354w,
+                      ./images/portfolio/project_1_md@2x.jpg 708w,
+                      ./images/portfolio/project_1_lg@1x.jpg 370w,
+                      ./images/portfolio/project_1_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_1_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -109,7 +134,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card__wrapper">
+                <div class="card__wrapper card__wrapper--first">
                   <h2 class="card__title">Технокряк</h2>
                   <p class="card__text">Веб-сайт</p>
                 </div>
@@ -119,9 +144,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/poster.jpg"
-                    alt="Постер з баскетболістами"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_2_sm@1x.jpg 450w,
+                      ./images/portfolio/project_2_sm@2x.jpg 900w,
+                      ./images/portfolio/project_2_md@1x.jpg 354w,
+                      ./images/portfolio/project_2_md@2x.jpg 708w,
+                      ./images/portfolio/project_2_lg@1x.jpg 370w,
+                      ./images/portfolio/project_2_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_2_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -145,9 +180,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/seafood.jpg"
-                    alt="Логотип рибного ресторану"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_3_sm@1x.jpg 450w,
+                      ./images/portfolio/project_3_sm@2x.jpg 900w,
+                      ./images/portfolio/project_3_md@1x.jpg 354w,
+                      ./images/portfolio/project_3_md@2x.jpg 708w,
+                      ./images/portfolio/project_3_lg@1x.jpg 370w,
+                      ./images/portfolio/project_3_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_3_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -171,9 +216,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/headphones.jpg"
-                    alt="Навушники"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_4_sm@1x.jpg 450w,
+                      ./images/portfolio/project_4_sm@2x.jpg 900w,
+                      ./images/portfolio/project_4_md@1x.jpg 354w,
+                      ./images/portfolio/project_4_md@2x.jpg 708w,
+                      ./images/portfolio/project_4_lg@1x.jpg 370w,
+                      ./images/portfolio/project_4_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_4_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -197,9 +252,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/boxes.jpg"
-                    alt="Дві коробки"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_5_sm@1x.jpg 450w,
+                      ./images/portfolio/project_5_sm@2x.jpg 900w,
+                      ./images/portfolio/project_5_md@1x.jpg 354w,
+                      ./images/portfolio/project_5_md@2x.jpg 708w,
+                      ./images/portfolio/project_5_lg@1x.jpg 370w,
+                      ./images/portfolio/project_5_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_5_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -223,9 +288,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/monitor.jpg"
-                    alt="Монітор з веб-сайтом"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_6_sm@1x.jpg 450w,
+                      ./images/portfolio/project_6_sm@2x.jpg 900w,
+                      ./images/portfolio/project_6_md@1x.jpg 354w,
+                      ./images/portfolio/project_6_md@2x.jpg 708w,
+                      ./images/portfolio/project_6_lg@1x.jpg 370w,
+                      ./images/portfolio/project_6_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_6_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -249,9 +324,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/magazine.jpg"
-                    alt="Журнал"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_7_sm@1x.jpg 450w,
+                      ./images/portfolio/project_7_sm@2x.jpg 900w,
+                      ./images/portfolio/project_7_md@1x.jpg 354w,
+                      ./images/portfolio/project_7_md@2x.jpg 708w,
+                      ./images/portfolio/project_7_lg@1x.jpg 370w,
+                      ./images/portfolio/project_7_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_7_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -275,9 +360,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/lab-tag.jpg"
-                    alt="Цінник з надписом TAG"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_8_sm@1x.jpg 450w,
+                      ./images/portfolio/project_8_sm@2x.jpg 900w,
+                      ./images/portfolio/project_8_md@1x.jpg 354w,
+                      ./images/portfolio/project_8_md@2x.jpg 708w,
+                      ./images/portfolio/project_8_lg@1x.jpg 370w,
+                      ./images/portfolio/project_8_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_8_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -299,9 +394,19 @@
               <a href="" class="link">
                 <div class="card__thumb">
                   <img
-                    src="./images/portfolio/laptop-hands.jpg"
-                    alt="Ноутбук з руками людини"
-                    width="370"
+                    srcset="
+                      ./images/portfolio/project_9_sm@1x.jpg 450w,
+                      ./images/portfolio/project_9_sm@2x.jpg 900w,
+                      ./images/portfolio/project_9_md@1x.jpg 354w,
+                      ./images/portfolio/project_9_md@2x.jpg 708w,
+                      ./images/portfolio/project_9_lg@1x.jpg 370w,
+                      ./images/portfolio/project_9_lg@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_9_sm@1x.jpg"
+                    alt="Член команди"
+                    loading="lazy"
+                    width="450"
                     height="294"
                   />
                   <div class="overlay">
@@ -436,20 +541,29 @@
         </form>
       </div>
     </footer>
-        <!-- Mobile menu -->
+    <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="menu-toggle__icon" width="40" height="40" aria-label="Закриття мобільного меню">
+        <svg
+          class="menu-toggle__icon"
+          width="40"
+          height="40"
+          aria-label="Закриття мобільного меню"
+        >
           <use href="./images/icons.svg#icon-close_menu40px"></use>
         </svg>
       </button>
-    
+
       <ul class="mobile-menu list">
         <li class="mobile-menu__item">
-          <a href="./index.html" class="mobile-menu__link  link">Студія</a>
+          <a href="./index.html" class="mobile-menu__link link">Студія</a>
         </li>
         <li class="mobile-menu__item">
-          <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current link">Портфоліо</a>
+          <a
+            href="./portfolio.html"
+            class="mobile-menu__link mobile-menu__link--current link"
+            >Портфоліо</a
+          >
         </li>
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link link">Контакти</a>
@@ -457,10 +571,14 @@
       </ul>
       <ul class="mobile-menu__contacts list">
         <li class="mobile-menu__contacts__item">
-          <a class="mobile-menu__contacts__phone link" href="">+38 096 111 11 11</a>
+          <a class="mobile-menu__contacts__phone link" href=""
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile-menu__contacts__item">
-          <a class="mobile-menu__contacts__mail link" href="">info@devstudio.com</a>
+          <a class="mobile-menu__contacts__mail link" href=""
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
       <ul class="mobile-menu__socials list">
@@ -478,10 +596,13 @@
         </li>
       </ul>
     </div>
-        <!-- JS -->
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-          crossorigin="anonymous"></script>
-        <script defer src="js/mobile-menu.js"></script>
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
