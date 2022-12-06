@@ -1,7 +1,16 @@
 .portfolio {
-    --items: 3;
-}
+    @media screen and (min-width: 320px) {
+            --items: 1;
+        }
 
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --items: 3;
+    }
+}
 .portfolio__card {
     background-color: var(--main-background-color);
     transition: box-shadow var(--anmtn-duration-cubic);
