@@ -1248,6 +1248,8 @@ button {
 
 .menu-toggle__icon {
   fill: currentColor;
+  -webkit-transition: color var(--anmtn-duration-cubic);
+  transition: color var(--anmtn-duration-cubic);
 }
 
 .menu-container {
@@ -1282,9 +1284,8 @@ button {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 21px;
+  right: 25px;
 }
 
 .mobile-menu {
