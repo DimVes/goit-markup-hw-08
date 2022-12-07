@@ -322,10 +322,6 @@ button {
   }
 }
 
-.menu-toggle__icon {
-  fill: currentColor;
-}
-
 .menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
