@@ -342,19 +342,15 @@ button {
   padding: 48px 40px;
   background-color: var(--main-background-color);
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: opacity var(--anmtn-duration-cubic), visibility var(--anmtn-duration-cubic);
-  transition: opacity var(--anmtn-duration-cubic), visibility var(--anmtn-duration-cubic);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
