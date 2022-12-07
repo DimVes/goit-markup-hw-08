@@ -317,12 +317,6 @@ button {
   background-color: var(--hero-backrgound-color);
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
-  .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
 @media screen and (max-width: 767px) {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/Hero/bg_sm@1x.jpg);
@@ -334,8 +328,8 @@ button {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../../images/Hero/bg_sm@2x.jpg);
-    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../../images/Hero/bg_sm@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(./images/Hero/bg_sm@2x.jpg);
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(./images/Hero/bg_sm@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -349,8 +343,8 @@ button {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../../images/Hero/bg_md@2x.jpg);
-    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../../images/Hero/bg_md@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/Hero/bg_md@2x.jpg);
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../images/Hero/bg_md@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -361,8 +355,8 @@ button {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../../images/Hero/bg_lg@2x.jpg);
-    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../../images/Hero/bg_lg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/Hero/bg_lg@2x.jpg);
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)), url(../images/Hero/bg_lg@2x.jpg);
   }
 }
 
