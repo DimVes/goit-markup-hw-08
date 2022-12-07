@@ -52,7 +52,12 @@
     position: relative;
     text-align: left;
 
-
+    // @media screen and (max-width: 1199px) {
+    //     display: inline-block;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
+}
 
 .btn__icon-send {
     position: absolute;
