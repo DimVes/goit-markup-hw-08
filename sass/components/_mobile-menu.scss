@@ -13,9 +13,11 @@
     }
 }
 
-.menu-toggle__icon, {
+.menu-toggle__icon {
     fill: currentColor;
 }
+
+
 
 .menu-container {
     display: flex;
@@ -79,6 +81,7 @@
         font-size: 26px;
     }
 }
+
 
 .mobile-menu__mail {
     display: block;
